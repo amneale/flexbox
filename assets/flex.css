@@ -1,0 +1,32 @@
+.flex { display: flex; }
+.flex-grow {
+	flex: 1 1 0;
+	padding: 0 10px;
+}
+
+.box {
+    height: 50px;
+    line-height: 50px;
+    flex-grow: 1;
+    text-align: center;
+}
+.box:nth-child(3n+1) { background: #C23B22; }
+.box:nth-child(3n+2) { background: #03C03C; }
+.box:nth-child(3n+3) { background: #007EBC; }
+
+.fixed-box {
+    flex-grow: 0;
+}
+.fixed-box:nth-child(3n+1) { width: 170px; }
+.fixed-box:nth-child(3n+2) { width: 70px; }
+.fixed-box:nth-child(3n+3) { width: 300px; }
+
+.box.wide {
+    width: 200px;
+}
+
+.flex-container > p {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+}
