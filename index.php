@@ -4,10 +4,15 @@ const TEMPLATES_DIR = 'templates/';
 
 $pages = array(
     'index',
-    'flex-basics',
-    'flex-basics-2',
-    'flex-basics-3',
-    'flex-basics-4',
+    'flex-container',
+    'flex-container-2',
+    'flex-container-3',
+    'flex-items',
+    'flex-items-2',
+    'flex-items-3',
+    'centering',
+    'holy-grail',
+    'demos',
 );
 
 $thisPage = isset($_GET['page']) ? $_GET['page'] : 0;

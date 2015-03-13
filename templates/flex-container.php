@@ -1,6 +1,7 @@
 <div class="page-header">
     <h1>Flex container</h1>
 </div>
+<p>Properties applied to the container defines the direction, wrapping and positioning of child items</p>
 
 <h2>Setting it up...</h2>
 <pre>

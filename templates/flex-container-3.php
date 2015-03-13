@@ -2,14 +2,13 @@
     <h1>Flex container (continued)</h1>
 </div>
 
-<h2>Flex justify</h2>
+<h2>Flex justify content</h2>
 <pre>
 .container {
     justify-content: flex-start | flex-end | center | space-between | space-around;
 }
-
 </pre>
-<p>Like text justify, this defines alignment along the main axis (horizontal or vertical)</p>
+<p>Like text justify, this defines the alignment of child items along the main axis</p>
 <p>flex-start</p>
 <div class="flex">
     <div class="box fixed-box">1</div>
@@ -44,14 +43,15 @@
     <div class="box fixed-box">2</div>
     <div class="box fixed-box">3</div>
 </div>
+
 <br /><br />
-<h2>Flex align</h2>
+<h2>Flex align items</h2>
 <pre>
 .container {
     align-items: flex-start | flex-end | center | stretch | baseline;
 }
 </pre>
-<p>Like text justify, this defines alignment along the main axis (horizontal or vertical)</p>
+<p>Alignment defines the layout of items along the cross-axis (perpendicular to the main axis)</p>
 <div class="flex">
     <p class="flex-grow">flex-start</p>
     <p class="flex-grow">flex-end</p>

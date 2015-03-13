@@ -10,7 +10,7 @@
 	</ul>
 </p>
 <p><strong>Flex layout</strong> is designed for laying out more complex applications.</p>
-<p>The main purpose of a flex container is to expand items to fill available free space, and conversely shrink them to prevent overflow.</p>
+<p>The main purpose of a flex container is to expand items to fill available free space, and conversely shrink them to prevent overflow. It can also be used to change visual ordering both horizontally and vertically.</p>
 
 <div class="page-header">
     <h1>Where can I use it?</h1>

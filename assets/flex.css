@@ -14,9 +14,6 @@
 .box:nth-child(3n+2) { background: #03C03C; }
 .box:nth-child(3n+3) { background: #007EBC; }
 
-.fixed-box {
-    flex-grow: 0;
-}
 .fixed-box:nth-child(3n+1) { width: 170px; }
 .fixed-box:nth-child(3n+2) { width: 70px; }
 .fixed-box:nth-child(3n+3) { width: 300px; }
