@@ -44,3 +44,45 @@
     <div class="box fixed-box">2</div>
     <div class="box fixed-box">3</div>
 </div>
+<br /><br />
+<h2>Flex align</h2>
+<pre>
+.container {
+    align-items: flex-start | flex-end | center | stretch | baseline;
+}
+</pre>
+<p>Like text justify, this defines alignment along the main axis (horizontal or vertical)</p>
+<div class="flex">
+    <p class="flex-grow">flex-start</p>
+    <p class="flex-grow">flex-end</p>
+    <p class="flex-grow">center</p>
+    <p class="flex-grow">stretch</p>
+    <p class="flex-grow">baseline</p>
+</div>
+<div class="flex">
+    <div class="flex flex-grow" style="align-items: flex-start;">
+        <div class="box" style="height: auto;">1</div>
+        <div class="box" style="height: auto;">2<br />2</div>
+        <div class="box" style="height: auto;">3</div>
+    </div>
+    <div class="flex flex-grow" style="align-items: flex-end;">
+        <div class="box" style="height: auto;">1</div>
+        <div class="box" style="height: auto;">2<br />2</div>
+        <div class="box" style="height: auto;">3</div>
+    </div>
+    <div class="flex flex-grow" style="align-items: center;">
+        <div class="box" style="height: auto;">1</div>
+        <div class="box" style="height: auto;">2<br />2</div>
+        <div class="box" style="height: auto;">3</div>
+    </div>
+    <div class="flex flex-grow" style="align-items: stretch;">
+        <div class="box" style="height: auto;">1</div>
+        <div class="box" style="height: auto;">2<br />2</div>
+        <div class="box" style="height: auto;">3</div>
+    </div>
+    <div class="flex flex-grow" style="align-items: baseline;">
+        <div class="box" style="height: auto; line-height: 70px;">1</div>
+        <div class="box" style="height: auto; line-height: 30px;">2<br />2</div>
+        <div class="box" style="height: auto;">3</div>
+    </div>
+</div>

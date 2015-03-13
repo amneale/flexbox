@@ -7,7 +7,7 @@
 .box {
     height: 50px;
     line-height: 50px;
-    flex-grow: 1;
+    width: 50px;
     text-align: center;
 }
 .box:nth-child(3n+1) { background: #C23B22; }
