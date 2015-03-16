@@ -29,7 +29,7 @@
 <br />
 <div class="flex" style="background: #ccc; height: 300px;">
     <div class="box">1</div>
-    <textarea class="box item" style="height: 50px; width: 250px; line-height: 1em; color: #fff;">This box is centered!</textarea>
+    <textarea class="box item" style="height: 50px; width: 250px; max-height: 300px; line-height: 1em; color: #fff;">This box is centered!</textarea>
     <div class="box" style="align-self: flex-end;">3</div>
 </div>
 

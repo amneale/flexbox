@@ -47,4 +47,4 @@
     </div>
 </div>
 <br />
-<p>This defines the order items are placed in within the flex container, essentially whether to extend in horizontal rows or vertical columns.</p>
+<p>This defines the direction items are placed in within the flex container, essentially whether to extend in horizontal rows or vertical columns.</p>
