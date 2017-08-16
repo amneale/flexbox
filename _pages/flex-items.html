@@ -1,0 +1,52 @@
+---
+layout: default
+order: 3
+---
+<h1>Flex items</h1>
+<p>Properties applied to child items defines how they are ordered and resized within the container</p>
+
+<h2>Ordering</h2>
+<p>Assigning an order to child items will override the order in the source code. It should be noted that as in the example, any nth-child CSS styles will still respect the order in the DOM</p>
+<pre>
+.item {
+    order: &lt;integer&gt;;
+}
+</pre>
+<br />
+<div class="container">
+    <div class="item" style="order: 10">1</div>
+    <div class="item" style="order: -1">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item" style="order: -2">5</div>
+</div>
+
+<h2>Flex grow</h2>
+<pre>
+.item {
+    flex-grow: &lt;integer&gt;;
+}
+</pre>
+<p>Flex grow allows items to grow to fill space, it is relative: an item with flex-grow: 2 will grow twice as much as one with flex-grow: 1</p>
+<div class="container">
+    <div class="item" style="flex-grow: 1">1</div>
+    <div class="item" style="flex-grow: 2">2</div>
+    <div class="item" style="flex-grow: 3">3</div>
+    <div class="item" style="flex-grow: 2">4</div>
+    <div class="item" style="flex-grow: 1">5</div>
+</div>
+
+<h2>Flex shrink</h2>
+<pre>
+.item {
+    flex-shrink: &lt;integer&gt;;
+}
+</pre>
+<p>The opposite of flex grow, this defines if items will shrink, and how much by. Unlike flex grow which defaults to 0, items in a flex container will shrink by default</p>
+<div class="container">
+    <div class="item wide" style="flex-shrink: 0;">1</div>
+    <div class="item wide" style="flex-shrink: 1;">2</div>
+    <div class="item wide" style="flex-shrink: 2;">3</div>
+    <div class="item wide" style="flex-shrink: 1;">4</div>
+    <div class="item wide" style="flex-shrink: 0;">5</div>
+</div>

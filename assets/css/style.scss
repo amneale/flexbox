@@ -1,0 +1,64 @@
+---
+---
+
+@import '{{ site.theme }}';
+
+.page-header {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    h1 {
+        font-size: 3em;
+        font-weight: normal;
+        text-shadow: 0 1px 0 #000;
+    }
+
+    h2 {
+        margin-top: 0;
+        text-shadow: 0 1px 0 #000;
+    }
+}
+
+.container {
+    display: flex;
+
+    &.center {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.flex {
+    flex: 1;
+}
+
+.item {
+    color: #fff;
+    text-shadow: 0 1px 0 #666;
+    padding: 1em 1.5em;
+    text-align: center;
+
+    &:nth-child(3n+1) { background: #c23b22; }
+    &:nth-child(3n+2) { background: #03c03c; }
+    &:nth-child(3n+3) { background: #007ebc; }
+
+    &.wide {
+        flex-basis: 30%;
+    }
+}
+
+.pad-h {
+    padding: 0 1em;
+}
+
+.grail-nav {
+    order: -1;
+}
+.grail-content {
+    flex-grow: 1;
+}
+.grail-nav,
+.grail-ads {
+    flex-shrink: 0;
+    flex-basis: 200px;
+}

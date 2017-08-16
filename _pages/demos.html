@@ -1,0 +1,65 @@
+---
+layout: default
+order: 4
+---
+<h1>Practical applications</h1>
+So now that we have learned a bit about how flexbox works, what practical applications does it have in web design?
+<h2>Centering</h2>
+<p>Vertically centering elements has long been a problematic process, usually ending in using some nasty combination of positioning or just using tables. With flexbox, however, vertical alignment is trivial, and independent of sibling elements.</p>
+<pre>
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</pre>
+<div class="container center" style="background: #f0f0f0; height: 9em;">
+    <div class="item">This item is centered!</div>
+</div>
+
+<h2>The Holy Grail layout</h2>
+<p>One of the most sought after web design layouts, often known as the holy grail of layouts fulfils the following:</p>
+<ul>
+    <li>Fluid center column, with fixed width sidebars</li>
+    <li>Ability to order columns logically in the source, while displaying them in any desired order</li>
+    <li>Equal height columns regardless of content</li>
+</ul>
+
+<p>Doing this usually relies on hacks such as faux-columns using repeating background images, over-the-top nesting of divs and some combination of floats or positions. Using flexbox a much easier solution is possible.</p>
+
+<pre>
+.container { display: flex; }
+.grail-nav { order: -1; }
+.grail-content { flex-grow: 1; }
+.grail-nav,
+.grail-ads {
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+</pre>
+<pre>
+&lt;div class="grail"&gt;
+    &lt;main class="grail-content"&gt;&hellip;&lt;/main&gt;
+    &lt;nav class="grail-nav"&gt;&hellip;&lt;/nav&gt;
+    &lt;aside class="grail-ads"&gt;&hellip;&lt;/aside&gt;
+&lt;/div&gt;
+</pre>
+
+<div class="container">
+    <main class="item grail-content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel tempus ante. Quisque sit amet efficitur eros. Aenean nec hendrerit urna, a laoreet velit. In ac pretium diam, ut auctor leo. Ut et dui laoreet, vehicula sapien id, viverra metus. Sed ut bibendum libero. Maecenas non felis sed urna ultricies pellentesque nec id purus.
+        </p>
+    </main>
+    <nav class="item grail-nav">Navigation</nav>
+    <aside class="item grail-ads">Adverts</aside>
+</div>
+
+
+
+<h2>Further reading</h2>
+<ul>
+    <li>
+        <a href="http://philipwalton.github.io/solved-by-flexbox/demos/">Solved by Flexbox</a>
+    </li>
+</ul>
