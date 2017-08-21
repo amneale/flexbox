@@ -3,6 +3,8 @@ title: Thinking outside of the box
 description: A guide and demonstration of the powerful new properties of the CSS flexbox
 theme: jekyll-theme-cayman
 
+google_analytics: UA-19384655-2
+
 include: ["_pages"]
 collections:
   pages:
